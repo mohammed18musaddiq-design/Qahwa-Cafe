@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qahwa Cafe | Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f8f6f3;
+      color: #333;
+    }
+    header {
+      background: #2f1b12;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .hero h2 { font-size: 42px; }
+    .menu {
+      padding: 60px 10%;
+    }
+    .menu h3 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #c7a17a;
+      display: inline-block;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .item {
+      background: #fff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .item h4 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+    .item p {
+      font-size: 14px;
+      color: #666;
+    }
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #2f1b12;
+      font-size: 16px;
+    }
+    footer {
+      background: #2f1b12;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display:flex;align-items:center;gap:12px;"><img src="qahwa-logo.jpg" alt="Qahwa Cafe Logo" style="height:46px;width:auto;" /><h1 style="margin:0;">Qahwa Cafe</h1></div>
+    <nav>
+      <a href="#coffee">Coffee</a>
+      <a href="#snacks">Snacks</a>
+      <a href="#desserts">Desserts</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Our Menu</h2>
+  </section>
+
+  <section class="menu">
+    <h3>Featured</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:30px;align-items:center;margin-top:30px;">
+      <img src="arabian-platter.jpg" alt="Arabian Platter" style="max-width:420px;width:100%;border-radius:18px;box-shadow:0 15px 30px rgba(0,0,0,0.25);" />
+      <div style="max-width:420px;">
+        <h4 style="font-size:26px;margin:0 0 10px;">Arabian Platter</h4>
+        <p style="font-size:15px;color:#555;">Egg fry, half boil, shakshuka dijaj along with 4 khuboos</p>
+        <div class="price" style="font-size:22px;margin-top:14px;">₹395</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="coffee">
+    <h3>Coffee</h3>
+    <div class="menu-grid">
+      <div class="item"><h4>Espresso</h4><p>Rich & bold single shot</p><div class="price">₹120</div></div>
+      <div class="item"><h4>Cappuccino</h4><p>Espresso with steamed milk foam</p><div class="price">₹160</div></div>
+      <div class="item"><h4>Latte</h4><p>Smooth milk-based coffee</p><div class="price">₹170</div></div>
+    </div>
+  </section>
+
+  <section class="menu" id="snacks">
+    <h3>Snacks</h3>
+    <div class="menu-grid">
+      <div class="item"><h4>Grilled Sandwich</h4><p>Cheese & veggies</p><div class="price">₹150</div></div>
+      <div class="item"><h4>French Fries</h4><p>Crispy golden fries</p><div class="price">₹130</div></div>
+    </div>
+  </section>
+
+  <section class="menu" id="desserts">
+    <h3>Desserts</h3>
+    <div class="menu-grid">
+      <div class="item"><h4>Chocolate Brownie</h4><p>Served warm</p><div class="price">₹180</div></div>
+      <div class="item"><h4>Cheesecake</h4><p>Classic baked cheesecake</p><div class="price">₹200</div></div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Qahwa Cafe · Crafted Happy Moments
+  Designed by M.M. Digitals 
+  </footer>
+</body>
+</html>
